@@ -1,0 +1,342 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #0056b3;
+}
+
+/* 🎯 Hero Section (Text Moved Up) */
+.hero {
+    text-align: center;
+    padding: 80px 20px; /* Increased top padding */
+    background-image: url('sanket_thailand.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* ⬆️ Moves content higher */
+    align-items: center;
+    color: white;
+    border-bottom: 4px solid #0066ff;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌟 Classy Button Styling */
+.hero button {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    font-size: 1.2em;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero button:hover {
+    background: linear-gradient(135deg, #0056b3, #004099);
+    transform: scale(1.05);
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about, .travel, .gallery, .contact {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+/* 🖼️ About Section Photos */
+/* 🖼️ About Section Photos (Larger & Side by Side) */
+.about-photos {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Increases space between images */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    margin-top: 20px;
+}
+
+.about-photos img {
+    width: 250px; /* Increased size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 12px;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.15); /* Softer shadow */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 📸 Hover Effect */
+.about-photos img:hover {
+    transform: scale(1.08); /* Slight zoom effect */
+}
+
+
+
+/* 📷 Travel Photos */
+.travel-photos img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🎨 Gallery Photos */
+.gallery-photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.gallery-photos img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-photos img:hover {
+    transform: scale(1.05);
+}
+
+/* 📩 Contact Page */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Social Media Buttons */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    color: #007bff;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #007bff;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Ensure Email Button is Next to LinkedIn */
+/* 📩 Contact Page */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* 🎨 Classy Social Media & Email Buttons */
+/* 📩 Contact Page */
+/* 📩 Contact Page */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* 🎨 Classy Social Media & Email Buttons */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* 🎭 Button Styling */
+.contact-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    background: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ✨ Hover Effect */
+.contact-buttons a:hover {
+    background: #007bff;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔗 Icons inside buttons */
+.contact-buttons a i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+/* 📝 Justify All Text */
+body {
+    text-align: justify;
+}
+
+/* Kommet Section */
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background: #333;
+    padding: 15px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Kommet Section */
+.kommet {
+    text-align: center;
+    padding: 40px;
+}
+
+.kommet h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+/* Image and Text Layout */
+.kommet-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.kommet-content img {
+    width: 50%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Description Styling */
+.kommet-text {
+    text-align: left;
+    max-width: 450px;
+}
+
+.kommet-text p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Call-to-Action Button */
+.kommet-btn {
+    display: inline-block;
+    background: #333;
+    color: white;
+    padding: 12px 24px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.kommet-btn:hover {
+    background: #555;
+}

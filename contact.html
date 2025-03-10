@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Sanket</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            margin-top: 100px; /* Moves the contact section further down */
+        }
+        .contact {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .contact p {
+            margin-bottom: 40px;
+        }
+        .contact-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .contact-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            color: #007bff;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 12px;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+        }
+        .contact-links a:hover {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="travel.html">Travel Journeys</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="kommet.html">Kommet</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Moves the Contact Section Down -->
+    <div class="container">
+        <section class="contact">
+            <h1>Contact Me</h1>
+            <p>Feel free to reach out through the options below.</p>
+            
+            <div class="contact-buttons">
+                <a href="https://www.linkedin.com/in/sanket" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:sanket@email.com">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
